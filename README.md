@@ -25,4 +25,4 @@ todo-list/
 │
 ├── index.html
 ├── styles.css
-└── app.js
+└── javascript.js
