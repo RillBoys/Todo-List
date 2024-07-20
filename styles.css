@@ -1,0 +1,152 @@
+body {
+	font-family: "Roboto", sans-serif;
+	background: radial-gradient(circle, #c81dff, #10151b);
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	color: #FFFFFF;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	overflow: hidden; /* Tambahan untuk memastikan partikel tidak meluap */
+}
+
+.container {
+	background-color: rgba(100, 65, 164, 0.6);
+	padding: 20px;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 400px;
+	z-index: 1;
+	position: relative;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.date-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.day {
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+.date {
+	font-size: 14px;
+	color: #d2d2d2;
+}
+
+.task-count {
+	font-size: 10px;
+	color: #b0b0b0;
+}
+
+h1 {
+	text-align: center;
+	color: #FFFFFF;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.input-group {
+	display: flex;
+	gap: 10px;
+	width: 100%;
+}
+
+input[type="text"] {
+	flex: 1;
+	padding: 10px;
+	border: 2px solid #392E5C;
+	border-radius: 8px;
+	font-size: 16px;
+	background: #6441A4;
+	color: #FFFFFF;
+}
+
+button {
+	padding: 10px 20px;
+	background-color: #392E5C;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+button:hover {
+	background-color: #955bff;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 20px;
+	width: 100%; /* Tambahan untuk memastikan lebar ul tidak meluap */
+}
+
+li {
+	background: #392E5C;
+	padding: 10px;
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	color: #FFFFFF;
+}
+
+li.completed label span {
+	text-decoration: line-through;
+	color: #6441A4;
+}
+
+.checkbox {
+	margin-right: 10px;
+}
+
+label {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.delete-task {
+	background: none;
+	border: none;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 16px;
+	margin-left: 10px;
+}
+
+.delete-task:hover {
+	color: #ff6666;
+}
